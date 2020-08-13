@@ -1,0 +1,27 @@
+#navbar{
+    flex-direction: column;
+}
+#home{
+    height: 300px;
+flex-direction: column;
+padding: 28px 1px;
+
+}
+.hprimary{
+font-size: 24px;
+    height: 400px;
+}
+#home p{
+    font-size: 24px;
+    padding: 1px 2px;
+}
+.servicecontainer{
+    margin: 157px 2px;
+}
+#home ::before
+{
+    height
+}
+#service{
+    flex-direction: column;
+}

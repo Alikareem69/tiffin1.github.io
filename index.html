@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" media="screen and (max-width:1170px)"href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+    }
+
+    #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.7;
+    }
+
+    #logo {
+        margin: 10px 34px;
+
+        pa
+    }
+
+    #logo img {
+        margin: 1px 0px;
+        height: 53px;
+
+    }
+
+    ul {
+        display: flex;
+
+    }
+
+    #navbar ul li {
+        list-style: none;
+        font-size: 1.3rem;
+    }
+
+    #navbar ul li a {
+        display: block;
+        padding: 1px 2px;
+        color: white;
+        border-radius: 2px;
+        text-decoration: none;
+
+    }
+
+    #navbar ul li a:hover {
+        background-color: white;
+        color: black;
+        padding: 1px 2px;
+        border-radius: 2px;
+        text-decoration: none;
+
+    }
+
+    #navbar ul li :hover {
+        background-color: gray;
+    }
+
+    .item {
+        margin: 4px 12px;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        padding: 3px 200px;
+        height: 255px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    #home::before {
+        content: "";
+        position: absolute;
+        background: url('pics/food-1932466.jpg') no-repeat center center/cover;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+    }
+
+    #home h1 {
+        font-family: cursive;
+        color: white;
+        text-align: center;
+    }
+
+    #home p {
+        font-family: cursive;
+        color: white;
+    }
+
+    .hprimary {
+        font-size: 2rem;
+        padding: 12px;
+    }
+
+    .hsecondary {
+        font-size: 1.3rem;
+        font-family: cursive;
+        text-align: center;
+    }
+
+    .btn {
+        border: 2px solid white;
+        background-color: brown;
+        font-size: 1.2rem;
+        padding: 3px 12px;
+        margin: 1px 2px;
+        border-radius: 10px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+    }
+
+    #service {
+        display: flex;
+        margin: 26px 45px;
+    }
+
+    #service .box1 {
+        border: 2px solid red;
+        border-radius: 15px;
+        margin: 2px 2px;
+        background-color: rgb(211, 207, 207);
+    }
+
+    #service .box1 img {
+        height: 100px;
+        display: block;
+        margin: auto;
+
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .hprimarycenter {
+        text-align: center;
+        font-family: cursive;
+        font-size: 2.3rem;
+    }
+
+    .servicecontainer {
+        position: absolute;
+        margin: 22px -23px;
+        display: block;
+
+
+    }
+
+    #service p {
+        font-family: cursive;
+    }
+
+    .client {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 344px;
+        
+    }
+    #ourclient{
+        position:absolute;
+        margin: 454px 495px;
+        display: flex;
+        justify-content: center;
+    }
+    #client ::before{
+        content: "";
+        position: absolute;
+        background: url('pics/mix.jpg') no-repeat center center/cover;
+        height: 80%;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.89;
+    }
+
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="pics/ap.jpg" alt="">
+        </div>
+        <ul>
+            <li class="item"> <a href="">Home</a> </liitem>
+            <li class="item"> <a href="">Services</a> </liitem>
+            <li class="item"> <a href="">About US</a> </liitem>
+            <li class="item"> <a href="">Contact US</a> </liitem>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="hprimary">
+            Welcome to ONLINEMeal
+        </h1>
+       <p>One of the best tiffin service in bareilly,our aim is to provide good quality food at a affordable price</p>
+        <button class="btn"> <details>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid id, ipsum distinctio mollitia omnis quasi, et quam sed assumenda, eius quidem quod odit ut voluptatem facere nobis architecto nostrum aspernatur inventore ullam!
+            <ul>
+                <li>first</li>
+                <li>second</li>
+            </ul>
+        </details> </button>
+    </section>
+    <section class="servicecontainer">
+        <h1 class="hprimarycenter">
+            Our Service
+        </h1>
+        <div id="service">
+            <div class="box1">
+                <img src="pics/veg.jpg" alt="">
+                <h2 class="hsecondary">
+                    VEG FOOD
+                </h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore adipisci ex iste magni
+                    soluta libero omnis earum aut veritatis aliquid beatae distinctio, illum quaerat deserunt laboriosam
+                    quae dolor reprehenderit fuga? Officiis, cumque!</p>
+            </div>
+            <div class="box1">
+                <img src="pics/nonveg.jpg" alt="">
+                <h2 class="hsecondary">
+                    NON-VEG FOOD
+                </h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore adipisci ex iste magni
+                    soluta libero omnis earum aut veritatis aliquid beatae distinctio, illum quaerat deserunt laboriosam
+                    quae dolor reprehenderit fuga? Officiis, cumque!</p>
+            </div>
+            <div class="box1">
+                <img src="pics/mix.jpg" alt="">
+                <h2 class="hsecondary">
+                    MIXED FOOD
+                </h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore adipisci ex iste magni
+                    soluta libero omnis earum aut veritatis aliquid beatae distinctio, illum quaerat deserunt laboriosam
+                    quae dolor reprehenderit fuga? Officiis, cumque!</p>
+            </div>
+        </div>
+
+
+ 
+</body>
+
+</html>
